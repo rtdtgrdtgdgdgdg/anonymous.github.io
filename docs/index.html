@@ -8,12 +8,18 @@
         body {
             font-family: Arial, sans-serif;
             background: url('https://tse4.mm.bing.net/th?id=OIP.1DvT0rorM-CJ74faAKMypgHaEK&pid=Api&P=0&h=180') no-repeat center center fixed;
-            background-size: contain; /* Ensures the background image fits the screen */
-            background-attachment: fixed; /* Keeps the image fixed while scrolling */
-            background-position: center center; /* Centers the background */
-            background-repeat: no-repeat; /* Prevents repeating the background */
+            background-size: cover;
             margin: 0;
             padding: 0;
+        }
+
+        /* Add a big "Anonymous" text at the top */
+        .header {
+            text-align: center;
+            font-size: 72px; /* Large font for "Anonymous" */
+            color: white;
+            margin-top: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Optional: Add shadow to make text stand out */
         }
 
         .container {
@@ -22,27 +28,23 @@
         }
 
         .box {
-            width: 200px;
-            height: 200px;
+            width: 150px; /* Smaller box size */
+            height: 150px; /* Smaller box size */
             display: inline-block;
             margin: 20px;
             background-color: rgba(255, 255, 255, 0.8);
-            line-height: 200px;
-            font-size: 24px;
+            line-height: 150px; /* Centers text vertically */
+            font-size: 20px; /* Smaller font size */
             cursor: pointer;
         }
 
-        /* Media Query for Mobile Devices */
-        @media (max-width: 600px) {
-            .box {
-                display: block; /* Makes boxes stack vertically */
-                width: 80%; /* Adjusts width for mobile */
-                margin: 10px auto; /* Center align and add some margin */
-            }
-        }
+        /* No media queries or changes to the original layout */
     </style>
 </head>
 <body>
+    <!-- Add "Anonymous" text at the top -->
+    <div class="header">Anonymous</div>
+
     <div class="container">
         <div class="box" onclick="window.location.href='discord.html';">Discord</div>
         <div class="box" onclick="window.location.href='commands.html';">Commands</div>
