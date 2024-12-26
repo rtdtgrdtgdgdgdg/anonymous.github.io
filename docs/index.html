@@ -3,49 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>My GitHub Pages Site</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background: url('https://tse4.mm.bing.net/th?id=OIP.1DvT0rorM-CJ74faAKMypgHaEK&pid=Api&P=0&h=180') no-repeat center center fixed;
+            background-size: contain; /* Ensures the background image fits the screen */
+            background-attachment: fixed; /* Keeps the image fixed while scrolling */
+            background-position: center center; /* Centers the background */
+            background-repeat: no-repeat; /* Prevents repeating the background */
             margin: 0;
             padding: 0;
-            background: url('https://tse4.mm.bing.net/th?id=OIP.1DvT0rorM-CJ74faAKMypgHaEK&pid=Api&P=0&h=180') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
+
         .container {
-            display: flex;
-            gap: 20px;
+            text-align: center;
+            padding: 50px;
         }
-        .square {
+
+        .box {
             width: 200px;
             height: 200px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 10px;
-            font-size: 1.5rem;
-            font-weight: bold;
+            display: inline-block;
+            margin: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            line-height: 200px;
+            font-size: 24px;
             cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            transition: transform 0.2s ease;
         }
-        .square:hover {
-            transform: scale(1.1);
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 600px) {
+            .box {
+                display: block; /* Makes boxes stack vertically */
+                width: 80%; /* Adjusts width for mobile */
+                margin: 10px auto; /* Center align and add some margin */
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="discord.html" class="square">Discord</a>
-        <a href="commands.html" class="square">Commands</a>
-        <a href="staff.html" class="square">Staff</a>
+        <div class="box" onclick="window.location.href='discord.html';">Discord</div>
+        <div class="box" onclick="window.location.href='commands.html';">Commands</div>
+        <div class="box" onclick="window.location.href='staff.html';">Staff</div>
     </div>
 </body>
 </html>
