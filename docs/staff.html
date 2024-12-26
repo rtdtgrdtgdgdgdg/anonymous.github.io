@@ -6,33 +6,57 @@
     <title>Staff</title>
     <style>
         body {
-            margin: 0;
-            padding: 20px;
+            font-family: Arial, sans-serif;
             background: url('https://tse4.mm.bing.net/th?id=OIP.1DvT0rorM-CJ74faAKMypgHaEK&pid=Api&P=0&h=180') no-repeat center center fixed;
             background-size: cover;
-            font-family: Arial, sans-serif;
             color: white;
-        }
-        h1 {
             text-align: center;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            font-size: 1.2rem;
+
+        .container {
+            padding: 50px;
         }
-        li {
-            margin: 10px 0;
+
+        .header {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .staff-list {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        .go-back-btn {
+            margin-top: 30px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .go-back-btn:hover {
+            background-color: rgba(255, 255, 255, 0.6);
         }
     </style>
 </head>
 <body>
-    <h1>Staff Members</h1>
-    <ul>
-        <li>anonymous_1223333929</li>
-        <li>tayk_1.2.3</li>
-        <li>whoami1273936</li>
-        <li>mystery333e_14118</li>
-    </ul>
+    <div class="container">
+        <div class="header">Staff</div>
+        <div class="staff-list">
+            <ul>
+                <li>anonymous_1223333929</li>
+                <li>tayk_1.2.3</li>
+                <li>whoami1273936</li>
+                <li>mystery333e_14118</li>
+            </ul>
+        </div>
+
+        <!-- Go Back Button -->
+        <a href="index.html" class="go-back-btn">Go Back to Home</a>
+    </div>
 </body>
 </html>
